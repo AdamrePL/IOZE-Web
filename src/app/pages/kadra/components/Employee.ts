@@ -3,6 +3,6 @@ export interface Employee {
     Stanowisko?: string;
     degree?: string;
     email?: string;
-    phone?: string;
+    phone?: number;
     room?: string;
 }
