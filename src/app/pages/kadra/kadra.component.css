@@ -1,0 +1,9 @@
+app-employee {
+    display: block;
+    width: 100%;
+    clear: both;
+
+    &:nth-child(1) {
+        color: purple;
+    }
+}
