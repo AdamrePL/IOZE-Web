@@ -28,6 +28,15 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
+# Images
+*.png
+*.jpg
+*.webp
+*.svg
+
+# Fonts
+*.woff
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/

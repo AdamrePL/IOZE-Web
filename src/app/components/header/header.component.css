@@ -6,7 +6,7 @@ section {
 section > div {
     height: calc(var(--_height) - 50px);
     background: var(--secondary);
-    padding-left: 20px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,7 +47,7 @@ section a {
 .icon.icon-wksir {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    color: #ffffff;
+    color: #227730;
     text-align: left;
     box-sizing: border-box;
     font-family: icon !important;
@@ -69,4 +69,14 @@ section a {
 
 .icon-wksir:before {
     content: "\e93b";
+}
+
+@media (prefers-color-scheme: dark) {
+    .icon.icon-wksir {
+        color: #fff;
+    }
+
+    div > img {
+        filter: brightness(2) contrast(1.2);
+    }
 }
