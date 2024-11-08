@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --text: #040316;
+    --background: #fbfbfe;
+    --primary: #3bc955;
+    --secondary: #96f486;
+    --accent: #eff887;
+}
+
+*,
+*::after,
+*::before {
+    user-select: text; /* All */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* Edge, Internet Explorer */
+    -webkit-user-select: text; /* Chrome, Safari */
+
+    -webkit-user-drag: none;
+
+    box-sizing: border-box; /* All */
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Chrome, Safari */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #eae9fc;
+        --background: #010104;
+        --primary: #36c450;
+        --secondary: #1c790b;
+        --accent: #6f7807;
+    }
+
+    html {
+        color-scheme: dark;
+    }
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    user-select: none; /* All */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Edge, Internet Explorer */
+    -webkit-user-select: none; /* Chrome, Safari */
+}
+
+a {
+    text-decoration-line: none;
+}
