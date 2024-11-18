@@ -12,12 +12,17 @@ section > div {
     justify-content: space-between;
 }
 
+
 section > div > div {
     position: relative;
 }
 
 section > div > div > span {
     margin-left: 60px;
+}
+
+section > div > div > span:last-child {
+    font-size: 90%;
 }
 
 section > nav {
