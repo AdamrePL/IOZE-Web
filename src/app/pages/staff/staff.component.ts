@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
-import { Employee } from './components/Employee';
+import { Employee } from './components/Employee.model';
 import { EmployeeComponent } from './components/employee/employee.component';
 
 @Component({
-    selector: 'app-kadra',
+    selector: 'app-staff',
     standalone: true,
     imports: [EmployeeComponent],
-    templateUrl: './kadra.component.html',
-    styleUrl: './kadra.component.css',
+    templateUrl: './staff.component.html',
+    styleUrl: './staff.component.css',
 })
-export class KadraComponent {
+export class StaffComponent {
     employees: Employee[] = [
         {
             name: 'Adam Koniuszy',
